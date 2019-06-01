@@ -3,13 +3,13 @@ import "../assets/styles/footer.styl"
 export default {
     data () {
         return{
-            author:"德寿"
+            author:"Lideshou"
         }
     },
     render(){
         return(
         <div class="footer">
-            <span>Written by {this.author}</span>
+            <span>Written by <span class="theauthor">{this.author}</span></span>
         </div>
         )
     }

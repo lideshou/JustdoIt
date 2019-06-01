@@ -2,6 +2,7 @@ const Path=require('path')
 const HTMLPlugin=require("html-webpack-plugin")
 const {VueLoaderPlugin}=require("vue-loader")
 const webpack=require("webpack")
+const ExtractPlugin=require("mini-css-extract-plugin")
 const isDev=process.env.NODE_ENV==="development"
 const config={
     mode:'development',
@@ -17,13 +18,6 @@ const config={
                 test:/\.vue$/,
                 loader:"vue-loader",
                 exclude:/node_modules/
-            },
-            {
-                test:/\.css$/,
-                use:[
-                    'vue-style-loader',
-                    'css-loader'
-                ]
             },
             {
                 test:/\.jsx$/,
@@ -69,6 +63,7 @@ const config={
 }
 
 if(isDev){
+    config.devtool="#cheap-module-eval-source-map"
     config.devServer={
         port:8000,
         host:"0.0.0.0",
@@ -77,6 +72,10 @@ if(isDev){
         },
         hot:true
     }
+    config.plugins.push(
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin()
+        )
 }
 
 module.exports=config
