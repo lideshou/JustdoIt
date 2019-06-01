@@ -575,7 +575,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n__webpack_require__(/*! ../assets/styles/footer.styl */ \"./src/assets/styles/footer.styl\");\n\nexports.default = {\n  data: function data() {\n    return {\n      author: \"黎德寿\"\n    };\n  },\n  render: function render() {\n    var h = arguments[0];\n    return h(\"div\", {\n      \"class\": \"footer\"\n    }, [h(\"span\", [\"Written by \", this.author])]);\n  }\n};\n\n//# sourceURL=webpack:///./src/todo/footer.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n__webpack_require__(/*! ../assets/styles/footer.styl */ \"./src/assets/styles/footer.styl\");\n\nexports.default = {\n  data: function data() {\n    return {\n      author: \"德寿\"\n    };\n  },\n  render: function render() {\n    var h = arguments[0];\n    return h(\"div\", {\n      \"class\": \"footer\"\n    }, [h(\"span\", [\"Written by \", this.author])]);\n  }\n};\n\n//# sourceURL=webpack:///./src/todo/footer.jsx?");
 
 /***/ }),
 

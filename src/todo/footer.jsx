@@ -3,7 +3,7 @@ import "../assets/styles/footer.styl"
 export default {
     data () {
         return{
-            author:"黎德寿"
+            author:"德寿"
         }
     },
     render(){
